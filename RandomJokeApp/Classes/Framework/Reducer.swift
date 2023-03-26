@@ -9,5 +9,5 @@ protocol Reducer<State, Action> {
     associatedtype State
     associatedtype Action
     
-    func reduce(state: inout State, action: Action)
+    @MainActor func reduce(state: inout State, action: Action)
 }

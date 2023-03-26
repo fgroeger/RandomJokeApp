@@ -26,12 +26,13 @@ final class Store<State, Action>: ObservableObject {
         self.reducer = reducer
     }
     
-    func dispatch(_ action: Action) {
+    @MainActor func dispatch(_ action: Action) {
         reducer.reduce(state: &state, action: action)
         
         for middleware in middlewares {
             middleware.handle(action: action, in: state)
                 .createPublisher()
+                .receive(on: DispatchQueue.main)
                 .sink { [weak self] effectAction in
                     self?.dispatch(effectAction)
                 }
