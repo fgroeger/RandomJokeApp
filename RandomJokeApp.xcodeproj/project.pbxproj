@@ -7,18 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F4BDD8E29BA4F720005E0CC /* RandomJokeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BDD8D29BA4F720005E0CC /* RandomJokeAppApp.swift */; };
-		1F4BDD9029BA4F720005E0CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BDD8F29BA4F720005E0CC /* ContentView.swift */; };
+		1F05F96029D0359B002CA88A /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05F95F29D0359B002CA88A /* Store.swift */; };
+		1F05F96229D035B6002CA88A /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05F96129D035B6002CA88A /* Effect.swift */; };
+		1F05F96429D035D4002CA88A /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05F96329D035D4002CA88A /* Reducer.swift */; };
+		1F05F96629D035E1002CA88A /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05F96529D035E1002CA88A /* Middleware.swift */; };
+		1F05F96829D07F80002CA88A /* RandomJokeStoreFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05F96729D07F80002CA88A /* RandomJokeStoreFactory.swift */; };
+		1F05F96A29D07F91002CA88A /* RandomJokeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05F96929D07F91002CA88A /* RandomJokeAction.swift */; };
+		1F05F96D29D08117002CA88A /* RefreshJokeMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05F96C29D08117002CA88A /* RefreshJokeMiddleware.swift */; };
+		1F05F96F29D0812A002CA88A /* OnAppearMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05F96E29D0812A002CA88A /* OnAppearMiddleware.swift */; };
+		1F4BDD8E29BA4F720005E0CC /* RandomJokeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BDD8D29BA4F720005E0CC /* RandomJokeApp.swift */; };
 		1F4BDD9229BA4F750005E0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4BDD9129BA4F750005E0CC /* Assets.xcassets */; };
 		1F4BDD9529BA4F750005E0CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4BDD9429BA4F750005E0CC /* Preview Assets.xcassets */; };
+		1F4BDDA229BA5E590005E0CC /* RandomJokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BDDA129BA5E590005E0CC /* RandomJokeView.swift */; };
+		1F4BDDA429BA5E880005E0CC /* RandomJokeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BDDA329BA5E880005E0CC /* RandomJokeState.swift */; };
+		1F4BDDA629BA5EB20005E0CC /* RandomJokeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BDDA529BA5EB20005E0CC /* RandomJokeReducer.swift */; };
+		1F4BDDAA29BA65B80005E0CC /* RandomJokeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BDDA929BA65B80005E0CC /* RandomJokeDTO.swift */; };
+		1F4BDDAC29BA65EB0005E0CC /* RandomJokeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BDDAB29BA65EB0005E0CC /* RandomJokeRepository.swift */; };
+		1F4BDDAF29BA67DD0005E0CC /* RandomJokeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BDDAE29BA67DD0005E0CC /* RandomJokeService.swift */; };
+		1F4BDDB129BA67E90005E0CC /* RandomJoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BDDB029BA67E90005E0CC /* RandomJoke.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F05F95F29D0359B002CA88A /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		1F05F96129D035B6002CA88A /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		1F05F96329D035D4002CA88A /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		1F05F96529D035E1002CA88A /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		1F05F96729D07F80002CA88A /* RandomJokeStoreFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeStoreFactory.swift; sourceTree = "<group>"; };
+		1F05F96929D07F91002CA88A /* RandomJokeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeAction.swift; sourceTree = "<group>"; };
+		1F05F96C29D08117002CA88A /* RefreshJokeMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshJokeMiddleware.swift; sourceTree = "<group>"; };
+		1F05F96E29D0812A002CA88A /* OnAppearMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAppearMiddleware.swift; sourceTree = "<group>"; };
 		1F4BDD8A29BA4F720005E0CC /* RandomJokeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomJokeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F4BDD8D29BA4F720005E0CC /* RandomJokeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeAppApp.swift; sourceTree = "<group>"; };
-		1F4BDD8F29BA4F720005E0CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1F4BDD8D29BA4F720005E0CC /* RandomJokeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeApp.swift; sourceTree = "<group>"; };
 		1F4BDD9129BA4F750005E0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F4BDD9429BA4F750005E0CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F4BDDA129BA5E590005E0CC /* RandomJokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeView.swift; sourceTree = "<group>"; };
+		1F4BDDA329BA5E880005E0CC /* RandomJokeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeState.swift; sourceTree = "<group>"; };
+		1F4BDDA529BA5EB20005E0CC /* RandomJokeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeReducer.swift; sourceTree = "<group>"; };
+		1F4BDDA929BA65B80005E0CC /* RandomJokeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDTO.swift; sourceTree = "<group>"; };
+		1F4BDDAB29BA65EB0005E0CC /* RandomJokeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeRepository.swift; sourceTree = "<group>"; };
+		1F4BDDAE29BA67DD0005E0CC /* RandomJokeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeService.swift; sourceTree = "<group>"; };
+		1F4BDDB029BA67E90005E0CC /* RandomJoke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJoke.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +60,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F05F95E29D03591002CA88A /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				1F05F95F29D0359B002CA88A /* Store.swift */,
+				1F05F96129D035B6002CA88A /* Effect.swift */,
+				1F05F96329D035D4002CA88A /* Reducer.swift */,
+				1F05F96529D035E1002CA88A /* Middleware.swift */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		1F05F96B29D08107002CA88A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1F05F96729D07F80002CA88A /* RandomJokeStoreFactory.swift */,
+				1F05F96C29D08117002CA88A /* RefreshJokeMiddleware.swift */,
+				1F05F96E29D0812A002CA88A /* OnAppearMiddleware.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		1F4BDD8129BA4F720005E0CC = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +100,8 @@
 		1F4BDD8C29BA4F720005E0CC /* RandomJokeApp */ = {
 			isa = PBXGroup;
 			children = (
-				1F4BDD8D29BA4F720005E0CC /* RandomJokeAppApp.swift */,
-				1F4BDD8F29BA4F720005E0CC /* ContentView.swift */,
+				1F4BDD9C29BA4F890005E0CC /* Resourses */,
+				1F4BDD9B29BA4F7E0005E0CC /* Classes */,
 				1F4BDD9129BA4F750005E0CC /* Assets.xcassets */,
 				1F4BDD9329BA4F750005E0CC /* Preview Content */,
 			);
@@ -65,6 +114,87 @@
 				1F4BDD9429BA4F750005E0CC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F4BDD9B29BA4F7E0005E0CC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1F05F95E29D03591002CA88A /* Framework */,
+				1F4BDD9E29BA5E3D0005E0CC /* Features */,
+				1F4BDD9D29BA5E380005E0CC /* Screens */,
+				1F4BDD8D29BA4F720005E0CC /* RandomJokeApp.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1F4BDD9C29BA4F890005E0CC /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		1F4BDD9D29BA5E380005E0CC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1F4BDD9F29BA5E490005E0CC /* RandomJoke */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1F4BDD9E29BA5E3D0005E0CC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1F4BDDA729BA65A60005E0CC /* RandomJoke */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1F4BDD9F29BA5E490005E0CC /* RandomJoke */ = {
+			isa = PBXGroup;
+			children = (
+				1F05F96B29D08107002CA88A /* Domain */,
+				1F4BDDA029BA5E500005E0CC /* UI */,
+			);
+			path = RandomJoke;
+			sourceTree = "<group>";
+		};
+		1F4BDDA029BA5E500005E0CC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1F4BDDA129BA5E590005E0CC /* RandomJokeView.swift */,
+				1F4BDDA329BA5E880005E0CC /* RandomJokeState.swift */,
+				1F4BDDA529BA5EB20005E0CC /* RandomJokeReducer.swift */,
+				1F05F96929D07F91002CA88A /* RandomJokeAction.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1F4BDDA729BA65A60005E0CC /* RandomJoke */ = {
+			isa = PBXGroup;
+			children = (
+				1F4BDDAD29BA67D50005E0CC /* Domain */,
+				1F4BDDA829BA65AD0005E0CC /* Data */,
+			);
+			path = RandomJoke;
+			sourceTree = "<group>";
+		};
+		1F4BDDA829BA65AD0005E0CC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1F4BDDA929BA65B80005E0CC /* RandomJokeDTO.swift */,
+				1F4BDDAB29BA65EB0005E0CC /* RandomJokeRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1F4BDDAD29BA67D50005E0CC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1F4BDDAE29BA67DD0005E0CC /* RandomJokeService.swift */,
+				1F4BDDB029BA67E90005E0CC /* RandomJoke.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +267,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F4BDD9029BA4F720005E0CC /* ContentView.swift in Sources */,
-				1F4BDD8E29BA4F720005E0CC /* RandomJokeAppApp.swift in Sources */,
+				1F05F96229D035B6002CA88A /* Effect.swift in Sources */,
+				1F05F96829D07F80002CA88A /* RandomJokeStoreFactory.swift in Sources */,
+				1F4BDDA429BA5E880005E0CC /* RandomJokeState.swift in Sources */,
+				1F4BDDAC29BA65EB0005E0CC /* RandomJokeRepository.swift in Sources */,
+				1F05F96429D035D4002CA88A /* Reducer.swift in Sources */,
+				1F4BDDA229BA5E590005E0CC /* RandomJokeView.swift in Sources */,
+				1F05F96029D0359B002CA88A /* Store.swift in Sources */,
+				1F05F96F29D0812A002CA88A /* OnAppearMiddleware.swift in Sources */,
+				1F4BDDAA29BA65B80005E0CC /* RandomJokeDTO.swift in Sources */,
+				1F05F96D29D08117002CA88A /* RefreshJokeMiddleware.swift in Sources */,
+				1F4BDDA629BA5EB20005E0CC /* RandomJokeReducer.swift in Sources */,
+				1F05F96A29D07F91002CA88A /* RandomJokeAction.swift in Sources */,
+				1F4BDDB129BA67E90005E0CC /* RandomJoke.swift in Sources */,
+				1F05F96629D035E1002CA88A /* Middleware.swift in Sources */,
+				1F4BDD8E29BA4F720005E0CC /* RandomJokeApp.swift in Sources */,
+				1F4BDDAF29BA67DD0005E0CC /* RandomJokeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
