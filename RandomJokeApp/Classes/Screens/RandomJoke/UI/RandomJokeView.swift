@@ -63,6 +63,7 @@ struct RandomJokeView: View {
         }
         .onAppear {
             store.dispatch(.onAppear)
+            store.dispatch(.refreshJoke)
         }
     }
 }

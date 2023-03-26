@@ -1,11 +1,11 @@
 //
-//  OnAppearMiddleware.swift
+//  SubscribeToRandomJokeMiddleware.swift
 //  RandomJokeApp
 //
 //  Created by Fabian Gröger on 26.03.23.
 //
 
-struct OnAppearMiddleware: Middleware {
+struct SubscribeToRandomJokeMiddleware: Middleware {
     typealias State = RandomJokeState
     typealias Action = RandomJokeAction
     

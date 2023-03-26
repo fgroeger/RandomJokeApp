@@ -16,7 +16,7 @@ struct RandomJokeStoreFactory {
             ),
             middlewares: [
                 RefreshJokeMiddleware(service: .shared),
-                OnAppearMiddleware(service: .shared)
+                SubscribeToRandomJokeMiddleware(service: .shared)
             ],
             reducer: RandomJokeReducer()
         )

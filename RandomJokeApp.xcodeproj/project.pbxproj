@@ -14,7 +14,7 @@
 		1F05F96829D07F80002CA88A /* RandomJokeStoreFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05F96729D07F80002CA88A /* RandomJokeStoreFactory.swift */; };
 		1F05F96A29D07F91002CA88A /* RandomJokeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05F96929D07F91002CA88A /* RandomJokeAction.swift */; };
 		1F05F96D29D08117002CA88A /* RefreshJokeMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05F96C29D08117002CA88A /* RefreshJokeMiddleware.swift */; };
-		1F05F96F29D0812A002CA88A /* OnAppearMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05F96E29D0812A002CA88A /* OnAppearMiddleware.swift */; };
+		1F05F96F29D0812A002CA88A /* SubscribeToRandomJokeMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05F96E29D0812A002CA88A /* SubscribeToRandomJokeMiddleware.swift */; };
 		1F4BDD8E29BA4F720005E0CC /* RandomJokeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BDD8D29BA4F720005E0CC /* RandomJokeApp.swift */; };
 		1F4BDD9229BA4F750005E0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4BDD9129BA4F750005E0CC /* Assets.xcassets */; };
 		1F4BDD9529BA4F750005E0CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4BDD9429BA4F750005E0CC /* Preview Assets.xcassets */; };
@@ -35,7 +35,7 @@
 		1F05F96729D07F80002CA88A /* RandomJokeStoreFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeStoreFactory.swift; sourceTree = "<group>"; };
 		1F05F96929D07F91002CA88A /* RandomJokeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeAction.swift; sourceTree = "<group>"; };
 		1F05F96C29D08117002CA88A /* RefreshJokeMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshJokeMiddleware.swift; sourceTree = "<group>"; };
-		1F05F96E29D0812A002CA88A /* OnAppearMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAppearMiddleware.swift; sourceTree = "<group>"; };
+		1F05F96E29D0812A002CA88A /* SubscribeToRandomJokeMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeToRandomJokeMiddleware.swift; sourceTree = "<group>"; };
 		1F4BDD8A29BA4F720005E0CC /* RandomJokeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomJokeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4BDD8D29BA4F720005E0CC /* RandomJokeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeApp.swift; sourceTree = "<group>"; };
 		1F4BDD9129BA4F750005E0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 			children = (
 				1F05F96729D07F80002CA88A /* RandomJokeStoreFactory.swift */,
 				1F05F96C29D08117002CA88A /* RefreshJokeMiddleware.swift */,
-				1F05F96E29D0812A002CA88A /* OnAppearMiddleware.swift */,
+				1F05F96E29D0812A002CA88A /* SubscribeToRandomJokeMiddleware.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -274,7 +274,7 @@
 				1F05F96429D035D4002CA88A /* Reducer.swift in Sources */,
 				1F4BDDA229BA5E590005E0CC /* RandomJokeView.swift in Sources */,
 				1F05F96029D0359B002CA88A /* Store.swift in Sources */,
-				1F05F96F29D0812A002CA88A /* OnAppearMiddleware.swift in Sources */,
+				1F05F96F29D0812A002CA88A /* SubscribeToRandomJokeMiddleware.swift in Sources */,
 				1F4BDDAA29BA65B80005E0CC /* RandomJokeDTO.swift in Sources */,
 				1F05F96D29D08117002CA88A /* RefreshJokeMiddleware.swift in Sources */,
 				1F4BDDA629BA5EB20005E0CC /* RandomJokeReducer.swift in Sources */,
