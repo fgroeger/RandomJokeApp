@@ -18,18 +18,38 @@ final class RandomJokeReducer: Reducer {
                 break
                 
             case .refreshJoke:
-                state.setup = ""
-                state.punchline = ""
-                state.isFavorite = false
+                state.currentJoke = .loading
                 
             case .favorite:
-                state.isFavorite.toggle()
+                switch state.currentJoke {
+                    case .loading:
+                        break
+                        
+                    case let .joke(joke):
+                        state.currentJoke = .joke(
+                            .init(
+                                setup: joke.setup,
+                                punchline: joke.punchline,
+                                isFavorite: !joke.isFavorite
+                            )
+                        )
+                        
+                    case .error:
+                        state.currentJoke = .error
+                }
                 
             case let .randomJokeChanged(joke):
                 state.hue = .random(in: 0...1)
-                state.setup = joke.setup
-                state.punchline = joke.punchline
-                state.isFavorite = false
+                state.currentJoke = .joke(
+                    .init(
+                        setup: joke.setup,
+                        punchline: joke.punchline,
+                        isFavorite: false
+                    )
+                )
+                
+            case .randomJokeRefreshFailed:
+                state.currentJoke = .error
         }
     }
 }

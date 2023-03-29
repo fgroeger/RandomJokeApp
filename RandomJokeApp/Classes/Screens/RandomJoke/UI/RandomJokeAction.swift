@@ -12,4 +12,5 @@ enum RandomJokeAction {
     
     // reactive
     case randomJokeChanged(RandomJoke)
+    case randomJokeRefreshFailed
 }

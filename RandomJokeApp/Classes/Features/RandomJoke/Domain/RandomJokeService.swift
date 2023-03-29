@@ -10,10 +10,17 @@ import Combine
 final class RandomJokeService {
     static let shared = RandomJokeService(repository: .shared)
     
-    var randomJokePublisher: AnyPublisher<RandomJoke, Never> {
+    var randomJokePublisher: AnyPublisher<Result<RandomJoke, Error>, Never> {
         repository.randomJokePublisher
-            .map { dto in
-                RandomJoke(id: dto.id, setup: dto.setup, punchline: dto.punchline)
+            .map { dtoResult in
+                switch dtoResult {
+                    case let .success(dto):
+                        let joke = RandomJoke(id: dto.id, setup: dto.setup, punchline: dto.punchline)
+                        return .success(joke)
+                        
+                    case let .failure(error):
+                        return .failure(error)
+                }
             }
             .eraseToAnyPublisher()
     }

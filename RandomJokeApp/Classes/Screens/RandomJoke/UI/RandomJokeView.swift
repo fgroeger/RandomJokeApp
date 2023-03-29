@@ -21,20 +21,15 @@ struct RandomJokeView: View {
             .animation(.easeInOut, value: store.state.hue)
             
             VStack(spacing: 16) {
-                Text(store.state.setup)
-                    .font(.title)
-                    .shadow(radius: 1)
-                    .foregroundColor(.white)
-                    .animation(.easeInOut, value: store.state.setup)
-                
-                HStack {
-                    Spacer()
-                    
-                    Text(store.state.punchline)
-                        .font(.body)
-                        .shadow(radius: 1)
-                        .foregroundColor(.white)
-                        .animation(.easeInOut, value: store.state.punchline)
+                switch store.state.currentJoke {
+                    case .loading:
+                        loadingView()
+                        
+                    case let .joke(joke):
+                        jokeView(joke)
+                        
+                    case .error:
+                        jokeErrorView()
                 }
             }
             .padding(.horizontal)
@@ -44,7 +39,8 @@ struct RandomJokeView: View {
                 Button {
                     store.dispatch(.favorite)
                 } label: {
-                    if store.state.isFavorite {
+                    if case let .joke(joke) = store.state.currentJoke,
+                       joke.isFavorite {
                         Image(systemName: "heart.fill")
                             .tint(.red)
                     } else {
@@ -65,6 +61,34 @@ struct RandomJokeView: View {
             store.dispatch(.onAppear)
             store.dispatch(.refreshJoke)
         }
+    }
+    
+    @ViewBuilder func loadingView() -> some View {
+        ProgressView()
+            .progressViewStyle(.circular)
+    }
+    
+    @ViewBuilder func jokeView(_ joke: RandomJokeState.CurrentJoke.Joke) -> some View {
+        Text(joke.setup)
+            .font(.title)
+            .shadow(radius: 1)
+            .foregroundColor(.white)
+        
+        HStack {
+            Spacer()
+            
+            Text(joke.punchline)
+                .font(.body)
+                .shadow(radius: 1)
+                .foregroundColor(.white)
+        }
+    }
+    
+    @ViewBuilder func jokeErrorView() -> some View {
+        Text("Oops, something went wrong! Please try again.")
+            .font(.title)
+            .shadow(radius: 1)
+            .foregroundColor(.white)
     }
 }
 

@@ -10,9 +10,7 @@ struct RandomJokeStoreFactory {
         Store(
             initialState: RandomJokeState(
                 hue: .random(in: 0...1),
-                setup: "",
-                punchline: "",
-                isFavorite: false
+                currentJoke: .loading
             ),
             middlewares: [
                 RefreshJokeMiddleware(service: .shared),

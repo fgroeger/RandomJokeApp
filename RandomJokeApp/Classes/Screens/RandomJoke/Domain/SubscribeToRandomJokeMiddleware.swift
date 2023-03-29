@@ -19,8 +19,14 @@ struct SubscribeToRandomJokeMiddleware: Middleware {
         guard case .onAppear = action else { return DoNothingEffect() }
         
         let publisher = randomJokeService.randomJokePublisher
-            .map { randomJoke in
-                return RandomJokeAction.randomJokeChanged(randomJoke)
+            .map { randomJokeResult in
+                switch randomJokeResult {
+                    case let .success(randomJoke):
+                        return RandomJokeAction.randomJokeChanged(randomJoke)
+                        
+                    case .failure:
+                        return RandomJokeAction.randomJokeRefreshFailed
+                }
             }
             .eraseToAnyPublisher()
         
